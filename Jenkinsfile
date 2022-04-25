@@ -27,8 +27,8 @@ node {
         }
     }
 
-    stage ('Push image to Artifactory') { // take that image and push to artifactory
-        steps {
+/*    stage ('Push image to Artifactory') { // take that image and push to artifactory
+       steps {
             rtDockerPush(
                 serverId: "artifactory",
                 image: "ec2-43-204-10-182.ap-south-1.compute.amazonaws.com:8082/os/busybox:latest",
@@ -38,6 +38,6 @@ node {
                 properties: 'project-name=docker1;status=stable'
             )
         }
-    }
+    } */
     
 }
