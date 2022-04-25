@@ -13,7 +13,7 @@ node {
 
             script {
                 def dockerfile = 'Dockerfile'
-                def customImage = docker.build('ec2-43-204-10-182.ap-south-1.compute.amazonaws.com:8082/os/busybox:latest', "-f ${dockerfile} .")
+                def customImage = docker.build('ec2-43-204-10-182.ap-south-1.compute.amazonaws.com:8082/ge-docker-dev-local/busybox', "-f ${dockerfile} .")
 
             }
         }
